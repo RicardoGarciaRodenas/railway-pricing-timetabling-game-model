@@ -38,18 +38,18 @@ The purpose of the various .m files developed is described below:
 1.  'Main.m': It is the main script and it calculates the railway market equilibrium, saving in a .mat file.
     List of functions used by "Main.m":
 
-        - `InitializeProblem.m`: This MATLAB function initializes the test problem (corridor Madrid-Barcelona) by generating four structures: TO (infrastructure data), TOCs (transport operators’ data), Demand (parameters and utility function), and S (pure strategies setup).
-        - `A.m`: Time slot allocation process performed by IM
-        - `A_Proj.m` Time slot allocation process performed by IM but it avoids modifying the slots assigned to the other operators (it used in the heuristic CGA) 
-        - `CGA.m`: This function solves the CGA problem
-        - `Compute_demand.m`: Calculates the demand on each service based on the services available  and their prices
-        - `EvaluaStrategia.m`: Evaluates the strategy using payoff for each TOC based on the assigned slots.
-        - `Make_Request.m`: Randomly requests time slots for each TOC
-        - `U0.m`: Compute the pay-offs for each operator
-        - `Optimal_Prices.m`: This function integrates the calculation of equilibrium prices using 
-                             the algorithm in the paper and MATLAB optimization algorithms to solve models.
-        - `Sol_f_i.m`: This function computes the optimal prices for TOC i
-        - `f_i.m`: Pay-off function for TOC i=o based on prices (Jo(Zo,Z_o))
+    - `InitializeProblem.m`: This MATLAB function initializes the test problem (corridor Madrid-Barcelona) by generating four structures: TO (infrastructure data), TOCs (transport operators’ data), Demand (parameters and utility function), and S (pure strategies setup).
+    - `A.m`: Time slot allocation process performed by IM
+    - `A_Proj.m` Time slot allocation process performed by IM but it avoids modifying the slots assigned to the other operators (it used in the heuristic CGA) 
+    - `CGA.m`: This function solves the CGA problem
+    - `Compute_demand.m`: Calculates the demand on each service based on the services available  and their prices
+    - `EvaluaStrategia.m`: Evaluates the strategy using payoff for each TOC based on the assigned slots.
+    - `Make_Request.m`: Randomly requests time slots for each TOC
+    - `U0.m`: Compute the pay-offs for each operator
+    - `Optimal_Prices.m`: This function integrates the calculation of equilibrium prices using 
+                            the algorithm in the paper and MATLAB optimization algorithms to solve models.
+    - `Sol_f_i.m`: This function computes the optimal prices for TOC i
+    - `f_i.m`: Pay-off function for TOC i=o based on prices (Jo(Zo,Z_o))
        
    
 2. 
@@ -85,9 +85,9 @@ If you encounter any issues or have ideas, you can contact us at ricardo.garcia@
 You can download a copy of all the files in this repository by cloning the
 [git](https://git-scm.com/) repository:
 
-    git clone https://github.com/RicardoGarciaRodenas/TAC-access-charge-for-freight-rail-transport.git
+    git clone https://github.com/RicardoGarciaRodenas/railway-pricing-timetabling-game-model.git
 
-or [download a zip archive](https://github.com/RicardoGarciaRodenas/TAC-access-charge-for-freight-rail-transport/archive/refs/heads/main.zip).
+or [download a zip archive](https://github.com/RicardoGarciaRodenas/railway-pricing-timetabling-game-model/archive/refs/heads/main.zip).
 
 
 ## License
